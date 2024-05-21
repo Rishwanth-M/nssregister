@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Official website of NSS KMIT - National Service Scheme, Keshav Memorial Institute of Technology. Stay updated on our events, community service, and social initiatives.">
+  <meta name="author" content="NSS KMIT">
+
+  <meta name="viewport" content="width=850, initial-scale=-1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>NSS HOMEPAGE</title>
+  <style>
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url('https://www.knoxalliance.store/wp-content/uploads/2017/05/light-color-background-images-for-website-top-hd-images-for-free-light-color-background-images-for-website-1-1024x768.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed;
+}
+
+
+  #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+  }
+
+    .small-boxes {
+      margin-top: 50px;
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      background: linear-gradient(to left, #2ddddd, #2ddddd);
+    }
+
+    .small-box {
+      height: 30px;
+      text-align: left;
+      line-height: 20px;
+      padding-top: 1px;
+      margin-top: 5px;
+      background-color: #59f1b4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    #slideshow {
+      margin-top: 10px;
+      width: 100%;
+      position: relative;
+    }
+
+    .carousel-inner img {
+      width: 80%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      background: none;
+      border: none;
+      color: #fff;
+      top: 0%; /* Adjust the vertical position */
+    }
+
+    .carousel-control-prev {
+      left: 0%; /* Adjust the percentage to move the arrow to the desired position */
+    }
+
+    .carousel-control-prev-icon {
+      height: 50px;
+      width: 50px;
+      background-size: 100%, 100%;
+      background-repeat: no-repeat;
+      background-image: url('https://img.icons8.com/ios/50/000000/chevron-left.png'); /* Adjust the image URL as needed */
+    }
+
+    .carousel-control-next {
+      right: 0%; /* Adjust the percentage to move the right arrow to the desired position */
+    }
+
+    .carousel-control-next-icon {
+      height: 50px;
+      width: 50px;
+      background-size: 100%, 100%;
+      background-repeat: no-repeat;
+      background-image: url('https://img.icons8.com/ios/50/000000/chevron-right.png'); /* Adjust the image URL as needed */
+    }
+
+    .carousel-indicators-container {
+      position: absolute;
+      bottom: 0;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      padding: 5px 0;
+      box-sizing: border-box;
+    }
+
+    .carousel-indicators li {
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .carousel-indicators img {
+      width: 30px;
+      height: 25px;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .content-section-1,
+    .content-section-2 {
+  margin-top: 10px; /* Adjust the top margin */
+  margin-bottom: 10px; /* Adjust the bottom margin */
+}
+
+.content-section-1 img,
+.content-section-2 img {
+  max-width: 60%;
+  border-radius: 10px;
+  margin-left: 80px;
+  height: auto; /* Change to auto to maintain aspect ratio */
+}
+
+    .content-box-1 {
+      background-color: #43a7a7;
+      border-radius: 20px;
+      border: 3px solid #dca6d1;
+      height: 50%;
+    }
+    .content-box-2 {
+      background-color: #ffffff9e;
+      padding: 10px;
+      border-radius: 20px;
+      border: 3px solid #dca6d1;
+      height: 100%;
+    }
+
+    .content-box-1,
+    .content-box-2 {
+  padding: 10px; /* Adjust the padding */
+}
+    .footer {
+      color: #0238fd;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .name {
+      color: #000000; /* Yellow color for the name */
+    }
+
+    .navbar a {
+      color: #080808;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .navbar a .extra-text {
+      opacity: 0;
+      transition: opacity 0.3s;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #2ddddd;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .navbar a:hover {
+      background-color: #2ddddd;
+      color: #fff;
+    }
+
+    .navbar a:hover .extra-text {
+      opacity: 1;
+    }
+
+    .carousel-item iframe {
+      background-color: transparent;
+      border-radius: 20px;
+      border: none;
+    }
+
+    #slideshow-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Set the height of the container to the viewport height */
+    }
+
+    #slideshow {
+      width: auto; /* Set the desired width of the slideshow */
+      margin-left:-50px;
+      
+    }
+
+    @media (max-width: 1024px) {
+.carousel-control-prev,
+.carousel-control-next {
+  font-size: 100px;
+  border-radius: 100%;
+  padding: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Set the background color only for the arrow icon */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #4afc03; /* Adjust the background color as needed */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Adjust the position of the arrows */
+.carousel-control-prev {
+  left: 60px;
+}
+
+.carousel-control-next {
+  right: 60px;
+}
+
+/* Style for the arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+}
+
+/* Style for the carousel indicators container */
+.carousel-indicators-container {
+  width: 80%;
+  padding: 5px 0;
+}
+
+
+      #slideshow {
+        width: 150%;
+        margin-left: -30%;
+        margin-right: 0;
+      }
+    
+      #slideshow-container {
+        padding: 0;
+        justify-content: flex-start;
+      }
+    
+      .carousel-inner img {
+        width: 200%;
+        height: auto;
+        
+        max-width: none;
+      }
+
+      .content-box-2 {
+        max-height: 430px;
+        margin-left: -1%;
+        margin-right: -30%;
+        
+        padding-right: 50px;
+      }
+      #carouselExampleControls {
+        max-width: 120%; /* Ensure the carousel container takes full width */
+      }
+    }
+    /* Media query for smaller screens */
+    @media (max-width: 850px) {
+      .content-section-1 img,
+    .content-section-2 img {
+      max-width: 80%;
+      border-radius: 10px;
+      height: auto;
+      margin-left: 0;
+    }
+      /* Adjustments for screens up to 850px */
+      .content-section-1 {
+        margin-bottom: 5vh;
+      }
+
+      .content-section-2 {
+        margin-bottom: 2vh;
+      }
+
+      .footer {
+        margin-top: auto;
+        margin-bottom: 0;
+      }
+
+      .content-box-2 {
+        max-height: none; /* Remove the max-height for smaller screens */
+        overflow-y: auto;
+      }
+    }
+    .faq-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    
+    .faq-question {
+      cursor: pointer;
+      color: #070707;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    .faq-answer {
+      display: none;
+      font-size: 14px;
+      color: #fff;
+    }
+    
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    
+
+</style>
+
+</head>
+
+<body>
+  <video id="video-background" autoplay loop muted>
+    <source src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/clouds_-_64767%20(1080p).mp4?alt=media&token=5f4565e5-5d2c-404d-9ac2-9b7f1da82bec" type="video/mp4">
+    <!-- Add additional source elements for other video formats if needed -->
+    Your browser does not support the video tag.
+</video>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2 text-center">
+        <img src="https://www.kmit.in/images/kmit-bar.png" alt="Top Left Image"
+          class="img-fluid rounded-circle" style="max-width: 150px; max-height: 75px;">
+      </div>
+      <div class="col-6 text-center mx-auto">
+        <h1 class="text-danger mt-3 display-5">NATIONAL SERVICE SCHEME</h1>
+        <h2 class="text-dark small mt-2">Central Sector Scheme of Government of India, Ministry of Youth Affairs &
+          Sports.</h2>
+      </div>
+      <div class="col-2 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/NSS-symbol.jpeg" class="img-fluid rounded-circle"
+          style="max-width: 150px; max-height: 80px;">
+      </div>
+    </div>
+
+    <!-- Navigation container row -->
+    <div class="row navbar">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-around"> <!-- Center the small boxes and add spacing -->
+          <!-- Home -->
+          <div class="col position-relative">
+            <a href="home.html">Home</a>
+          </div>
+          <!-- About Us -->
+          <div class="col position-relative">
+            <a href="about_us.html">About Us</a>
+          </div>
+          <!-- Gallery -->
+          <div class="col position-relative">
+            <a href="gallery.html">Gallery</a>
+          </div>
+          <!-- Events -->
+          <div class="col position-relative">
+            <a href="events.html">Events</a>
+          </div>
+          <!-- Blood Community -->
+          <div class="col position-relative">
+            <a href="blood_community.html" onclick="window.open(this.href, '_blank'); return false;">Blood Community</a>
+          </div>
+          <!-- Contact Us -->
+          <div class="col position-relative">
+            <a href="contact_us.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+              <div id="slideshow">
+                  <div class="mx-auto" style="width: 80%;">
+                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <iframe src="https://drive.google.com/file/d/1F-GiN2PRFw5lMqtiaIQJ4gk3c546wajo/preview" width="640" height="480" allow="autoplay"></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                  <iframe src="https://drive.google.com/file/d/1nAVB7aNkZaUg93uTIXETODgRE9ST9jVo/preview" width="640" height="480" allow="autoplay"></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                  <iframe src="https://drive.google.com/file/d/1mkl5mL0VVkqOiuBTdHfpqG_0Wfg1MT2f/preview" width="640" height="480" allow="autoplay"></iframe>
+                              </div>
+                              <!-- Add more carousel items with images here -->
+                              <div class="carousel-item">
+                                  <iframe src="https://drive.google.com/file/d/1mQxfsusSgn0pz1y0JvilaDwtLiFP29FM/preview" width="640" height="480" allow="autoplay"></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                  <iframe src="https://drive.google.com/file/d/1E5rpTysye_xNTRYoutjVgNC8ANkm_LQz/preview" width="640" height="480" allow="autoplay"></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                  <iframe src="https://drive.google.com/file/d/1n9CRCrPnmvcLJDYaQDUXrVBnpDMWYOf5/preview" width="640" height="480" allow="autoplay"></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                  <iframe src="https://drive.google.com/file/d/1mw6Z1rljH2uPnZkub6iIX0zTotP_c717/preview" width="640" height="480" allow="autoplay"></iframe>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-indicators-container">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleControls" data-slide-to="0" class="active">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1F-GiN2PRFw5lMqtiaIQJ4gk3c546wajo/preview" allow="autoplay" ></iframe>
+                </div>
+              </li>
+              <li data-target="#carouselExampleControls" data-slide-to="1" >
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1nAVB7aNkZaUg93uTIXETODgRE9ST9jVo/preview" allow="autoplay" ></iframe>
+                </div>
+              </li>
+              <li data-target="#carouselExampleControls" data-slide-to="2" >
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1mkl5mL0VVkqOiuBTdHfpqG_0Wfg1MT2f/preview" allow="autoplay" ></iframe>
+                </div>
+              </li>
+              <li data-target="#carouselExampleControls" data-slide-to="3" >
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1mQxfsusSgn0pz1y0JvilaDwtLiFP29FM/preview" allow="autoplay" ></iframe>
+                </div>
+              </li>
+              <li data-target="#carouselExampleControls" data-slide-to="4">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1E5rpTysye_xNTRYoutjVgNC8ANkm_LQz/preview" allow="autoplay" ></iframe>
+                </div>
+              </li>
+              <li data-target="#carouselExampleControls" data-slide-to="5" >
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1n9CRCrPnmvcLJDYaQDUXrVBnpDMWYOf5/preview" allow="autoplay" ></iframe>
+                </div>
+              </li>
+              <li data-target="#carouselExampleControls" data-slide-to="6" >
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1mw6Z1rljH2uPnZkub6iIX0zTotP_c717/preview" allow="autoplay" ></iframe>
+                </div>
+              </li>
+            </ol>
+          </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-box-2 float-right mt-4" style="max-height: 430px; overflow-y: auto;">
+              <h3 style="color: #f30909;">Quick Questions?</h3>
+              <ul class="faq-list">
+                <li class="faq-item">
+                  <h4 class="faq-question">1.What kind of activities does NSS Organize?</h4>
+                  <p class="faq-answer" style="font-size: 18px; line-height: 1.6; color: #0343e6;">NSS organizes a variety of activities, including community service projects, awareness campaigns, health camps, cleanliness drives, and more. These activities are designed to address social issues and contribute to the betterment of society..</p>
+                </li>
+                <li class="faq-item">
+                  <h4 class="faq-question">2. Want to be a Volunteer?</h4>
+                  <div class="faq-answer" style="font-size: 18px; line-height: 1.6; color: #0343e6;">
+                    <p>The process is simple yet impactful. All you need to do is complete our volunteer registration form and join our WhatsApp group.</p>
+                    <div style="border: 2px solid #000000; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                      <a href="https://forms.gle/tVntUBALLTswbNhn7" target="_blank" style="color: #ff0000; text-decoration: none;">1st Years Volunteering Form</a></div>
+                      <div style="border: 2px solid #000000; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                      <a href="https://forms.gle/nTpG8HMoEWxznqg49" target="_blank" style="color: #ff0000; text-decoration: none;">2nd Years Volunteering Form</a></div>
+                      <div style="border: 2px solid #000000; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                      <a href="https://forms.gle/CNYEpiNsiVoxjcdY9" target="_blank" style="color: #ff0000; text-decoration: none;">3rd Years Volunteering Form</a></div>
+                  </div>
+                </li>
+                
+                <li class="faq-item">
+                  <h4 class="faq-question">3.What is the purpose of NSS?</h4>
+                  <p class="faq-answer" style="font-size: 18px; line-height: 1.6; color: #0343e6;">The National Service Scheme (NSS) aims to provide an opportunity for students to participate in community service and social activities. It focuses on the overall development of students by instilling a sense of responsibility towards the community.</p>
+                </li>
+                <li class="faq-item">
+                  <h4 class="faq-question">4.Can NSS activities help in personal and professional development?</h4>
+                  <p class="faq-answer" style="font-size: 18px; line-height: 1.6; color: #0343e6;">Yes, participating in NSS activities can contribute significantly to personal and professional development. It helps in building leadership skills, teamwork, communication, and a sense of social responsibility, which are valuable in various aspects of life.</p>
+                </li>
+                <li class="faq-item">
+                  <h4 class="faq-question">5.How can NSS contribute to social causes and community service?</h4>
+                  <p class="faq-answer" style="font-size: 18px; line-height: 1.6; color: #0343e6;">NSS contributes to social causes and community service through a range of activities such as organizing health camps, environmental initiatives, educational programs, and more. It provides a platform for students to actively engage in addressing societal issues.</p>
+                </li>
+                <li class="faq-item">
+                  <h4 class="faq-question">6.How often does NSS conduct events or initiatives?</h4>
+                  <p class="faq-answer" style="font-size: 18px; line-height: 1.6; color: #0343e6;">NSS conducts events and initiatives regularly throughout the academic year. The frequency may vary, but there are often opportunities for students to engage in community service and other activities.</p>
+                </li>
+                <li class="faq-item">
+                  <h4 class="faq-question">7.Know About Us?</h4>
+                  <div class="faq-answer">
+                    <p></p>
+                    <div style="border: 2px solid #000000; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                      <a href="about_us.html" target="_blank" style="color: #ff0000; text-decoration: none;">About NSS KMIT</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+      </div>
+  </div>
+    
+
+    <div class="row content-section-1">
+      <div class="col-md-4">
+        <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/Dr%20B%20Malleshwari-photoaidcom-cropped.jpg?alt=media&token=1c71fdca-ff11-412d-88fd-086e481f0a20" alt="Left Image 2">
+      </div>
+      <div class="col-md-8 content-box-1">
+        <h3 style="color: #0d0d0e;">Principal</h3>
+        <h4>KMIT College</h4>
+        <p style="font-size: 18px; line-height: 1.6; color: #555;">
+          "As the head of the college, I commend the National Service Scheme (NSS) for instilling a strong sense
+           of community service in our students. NSS goes beyond academics, fostering leadership, empathy, and a 
+           commitment to societal well-being. Our college takes pride in the positive impact our NSS volunteers 
+           make, contributing to a culture of social responsibility and holistic development."</p>
+      </div>
+    </div>
+
+    <div class="row content-section-1">
+      <div class="col-md-4">
+        <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/WhatsApp%20Image%202024-03-02%20at%2023%2C10%2C54_3aec2c98-photoaidcom-cropped%20(2).jpg?alt=media&token=079a7714-8e6a-45a0-bbc3-07c66bf72e15" alt="eb1 Image" class="img-fluid">
+  </div>
+      <div class="col-md-8 content-box-1">
+        <h3 style="color: #0d0d0e;">Program Officer</h3>
+        <h4>KMIT College</h4>
+        <p style="font-size: 18px; line-height: 1.6; color: #681919;">
+          "As the principal, I express my admiration for the National Service Scheme (NSS) and its profound 
+          influence on our students. NSS is shaping individuals with a deep 
+          commitment to community service and leadership. The active participation of our students in NSS 
+          activities mirrors our college's dedication to fostering socially conscious and empathetic 
+          contributors to society."</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var faqItems = document.querySelectorAll(".faq-item");
+  
+      faqItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          faqItems.forEach(function (otherItem) {
+            if (otherItem !== item) {
+              otherItem.classList.remove("active");
+            }
+          });
+  
+          item.classList.toggle("active");
+        });
+      });
+    });
+  </script>
+  
+  <!-- Script for automatic slideshow and thumbnail navigation -->
+  <script>
+    $(document).ready(function () {
+      // Set interval for automatic slideshow (in milliseconds)
+      $('#carouselExampleControls').carousel({
+        interval: 3000 // Adjust the interval as per your preference
+      });
+
+      // Handle thumbnail click to navigate to the corresponding slide
+      $('.carousel-indicators li').click(function () {
+        var slideTo = $(this).data('slide-to');
+        $('#carouselExampleControls').carousel(slideTo);
+      });
+    });
+  </script>
+  <footer class="footer">
+    &copy; 2024-2026 <span class="name">NSS KMIT</span> | All Rights Reserved. 
+    <br>Designed by <span class="name">M Rishwanth Kumar</span>
+  </footer>
+
+</body>
+
+</html>

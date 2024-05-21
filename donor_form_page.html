@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official website of NSS KMIT - National Service Scheme, Keshav Memorial Institute of Technology. Stay updated on our events, community service, and social initiatives.">
+    <meta name="author" content="NSS KMIT">
+
+    <meta name="viewport" content="width=1024, initial-scale=-1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Donor Form</title>
+    <style>
+        body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url('https://www.knoxalliance.store/wp-content/uploads/2017/05/light-color-background-images-for-website-top-hd-images-for-free-light-color-background-images-for-website-1-1024x768.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed;
+}
+      
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .form-background {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/9/90/NSS-symbol.jpeg') center/cover repeat; /* Replace with your image URL */
+            padding: 20px; /* Adjust padding as needed */
+        }
+
+        .designed-by {
+            font-weight: bold;
+        }
+
+        .small-boxes {
+            margin-top: 50px;
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+            background: linear-gradient(to left, #2ddddd, #2ddddd);
+        }
+
+        .small-box {
+            height: 30px;
+            text-align: left;
+            line-height: 20px;
+            padding-top: 1px;
+            margin-top: 5px;
+            background-color: #fefefd;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .content-section {
+            margin-top: 20px;
+        }
+
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content-box {
+            background-color: #43a7a7;
+            padding: 15px;
+            border: 3px solid #dca6d1;
+        }
+
+        .footer {
+            color: #0238fd;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            bottom: 0;
+            width: 100%;
+            font-size: 18px;
+          }
+      
+          .name {
+            color: #000000; /* Yellow color for the name */
+          }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .signup-container {
+            background-color: #f8f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 60%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Styles for smaller screens (less than 768px) */
+        @media (max-width: 768px) {
+            .signup-container {
+                width: 100%; /* Adjusted width for better responsiveness */
+            }
+        }
+
+        /* Styles for even smaller screens (less than 576px) */
+        @media (max-width: 576px) {
+            .signup-container {
+                width: 100%; /* Further adjust width for smaller screens */
+            }
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            color: #db3434;
+        }
+
+        .signup-form {
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%; /* Adjusted width for better responsiveness */
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #3498db;
+        }
+
+        .form-group #name,
+        .form-group #gmail,
+        .form-group #blood-group,
+        .form-group #dob,
+        .form-group #health-problems,
+        .form-group #phone,
+        .form-group #phone-verification {
+            margin-top: 10px;
+        }
+
+        .form-group .signup-btn {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%; /* Adjusted width for better responsiveness */
+            transition: background-color 0.3s;
+        }
+
+        .form-group .signup-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .form-group #dob + #age {
+            margin-top: 10px;
+            color: #555555;
+        }
+
+        .form-group #dob + #age {
+            margin-top: 10px;
+            color: #555555;
+        }
+        .navbar a {
+            color: #080808;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+      
+          .navbar a .extra-text {
+            opacity: 0;
+            transition: opacity 0.3s;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #2ddddd;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            pointer-events: none;
+            z-index: 1;
+          }
+      
+          .navbar a:hover {
+            background-color: #2ddddd;
+            color: #fff;
+          }
+      
+          .navbar a:hover .extra-text {
+            opacity: 1;
+          }
+
+    </style>
+</head>
+
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/clouds_-_64767%20(1080p).mp4?alt=media&token=5f4565e5-5d2c-404d-9ac2-9b7f1da82bec" type="video/mp4">
+        <!-- Add additional source elements for other video formats if needed -->
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2 text-center">
+                <img src="https://www.kmit.in/images/kmit-bar.png" alt="Top Left Image"
+                    class="img-fluid rounded-circle" style="max-width: 150px; max-height: 75px;">
+            </div>
+            <div class="col-6 text-center mx-auto">
+                <h1 class="text-danger mt-3 display-5">NATIONAL SERVICE SCHEME</h1>
+                <h2 class="text-dark small mt-2">Central Sector Scheme of Government of India, Ministry of Youth Affairs &
+                    Sports.</h2>
+            </div>
+            <div class="col-2 text-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/NSS-symbol.jpeg"
+                    class="img-fluid rounded-circle" style="max-width: 150px; max-height: 80px;">
+            </div>
+        </div>
+
+        <!-- Navigation container row -->
+    <div class="row navbar">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-around"> <!-- Center the small boxes and add spacing -->
+            <!-- Home -->
+            <div class="col position-relative">
+              <a href="home.html">Home</a>
+            </div>
+            <!-- About Us -->
+            <div class="col position-relative">
+              <a href="about_us.html">About Us</a>
+            </div>
+            <!-- Gallery -->
+            <div class="col position-relative">
+              <a href="gallery.html">Gallery</a>
+            </div>
+            <!-- Events -->
+            <div class="col position-relative">
+              <a href="events.html">Events</a>
+            </div>
+            <!-- Blood Community -->
+            <div class="col position-relative">
+              <a href="blood_community.html" onclick="window.open(this.href, '_blank'); return false;">Blood Community</a>
+            </div>
+            <!-- Contact Us -->
+            <div class="col position-relative">
+              <a href="contact_us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Navigation links -->
+        <div class="d-flex justify-content-center mt-3">
+            <a href="donor_form_page.html" class="btn btn-primary mr-3">Go to Donor Page</a>
+            <a href="patient_form_page.html" class="btn btn-primary">Go to Patient Page</a>
+        </div>
+        <!-- Signup container -->
+        <div class="signup-container col-12 mx-auto .form-background ">
+            <h2>Donor Application Form</h2>
+            <form id="donor-form" class="signup-form" action="/.netlify/functions/submitDonorform" method="POST">
+                <div class="form-group">
+                    <label for="name">Name ( With Surname ):</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="MALE">MALE</option>
+                        <option value="FEMALE">FEMALE</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="gmail">Gmail:</label>
+                    <input type="email" id="gmail" name="gmail" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="blood-group">Blood Group:</label>
+                    <select id="blood-group" name="blood-group">
+                        <option value="" disabled selected>Select Blood Group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="form-group">
+                    <span id="calculated-age"></span>
+                </div>
+                <div class="form-group">
+                    <label for="health-problems">Any Health Problems (If Any Mention In Detail) :</label>
+                    <textarea id="health-problems" name="health-problems" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"  maxlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-verification">Re-Enter Phone Number:</label>
+                    <input type="text" id="phone-verification" name="phone-verification" maxlength="10" required>
+                    <!-- You may add your phone verification logic here -->
+                </div>
+                <button type="submit" class="signup-btn col-7 mx-5">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function calculateAge(dob) {
+                const today = new Date();
+                const birthdate = new Date(dob);
+                const ageInMilliseconds = today - birthdate;
+                const ageInYears = Math.floor(ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000));
+                return ageInYears;
+            }
+    
+            function updateCalculatedAge() {
+                const dob = document.getElementById('dob').value;
+                const ageElement = document.getElementById('calculated-age');
+    
+                if (dob) {
+                    const age = calculateAge(dob);
+                    if (age < 18 || age > 65) {
+                        ageElement.textContent = `Invalid Age: ${age} years. Age must be between 18 and 65 years.`;
+                    } else {
+                        ageElement.textContent = `Age: ${age} years (Valid Age to be a Donor)`;
+                    }
+                } else {
+                    ageElement.textContent = '';
+                }
+            }
+    
+            function isValidAge(dob) {
+                const age = calculateAge(dob);
+                if (age < 18 || age > 65) {
+                    alert('Invalid Age: Age must be between 18 and 65 years.');
+                    return false;
+                }
+                return true;
+            }
+    
+            function isValidPhoneNumber(phone) {
+                const phoneRegex = /^\d{10}$/; // Assuming a 10-digit phone number
+                return phoneRegex.test(phone);
+            }
+    
+            function submitForm(event) {
+    event.preventDefault();
+
+    const phone = document.getElementById('phone').value;
+    const phoneVerification = document.getElementById('phone-verification').value;
+
+    // Validate phone number and phone verification
+    if (isValidPhoneNumber(phone) && phone === phoneVerification) {
+        const formData = {
+            name: document.getElementById('name').value,
+            gmail: document.getElementById('gmail').value,
+            bloodGroup: document.getElementById('blood-group').value,
+            dob: document.getElementById('dob').value,
+            age: document.getElementById('dob').value ? calculateAge(document.getElementById('dob').value) : null,
+            healthProblems: document.getElementById('health-problems').value,
+            phone: phone,
+            phoneVerification: phoneVerification
+        };
+
+        // Submit form data
+        fetch('/.netlify/functions/submitDonorform', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Response from server:', data);
+
+            if (data.message === 'Form submitted successfully') {
+                alert(data.message);
+                window.location.reload();
+            } else {
+                alert('Form submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    } else {
+        alert('Invalid phone number or phone verification. Please check and try again.');
+    }
+}
+
+
+
+    
+            // Attach the updateCalculatedAge function to the change event of the date of birth input
+            document.getElementById('dob').addEventListener('change', updateCalculatedAge);
+    
+            // Attach the submitForm function to the form's submit event
+            document.getElementById('donor-form').addEventListener('submit', submitForm);
+        });
+    </script>
+    
+    <footer class="footer">
+        &copy; 2024-2026 <span class="name">NSS KMIT</span> | All Rights Reserved. 
+        <br>Designed by <span class="name">M Rishwanth Kumar</span>
+      </footer>
+</body>
+
+</html>

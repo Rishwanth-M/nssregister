@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Official website of NSS KMIT - National Service Scheme, Keshav Memorial Institute of Technology. Stay updated on our events, community service, and social initiatives.">
+  <meta name="author" content="NSS KMIT">
+
+  <meta name="viewport" content="width=1024, initial-scale=-1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>About NSS KMIT</title>
+  <style>
+    body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url('https://www.knoxalliance.store/wp-content/uploads/2017/05/light-color-background-images-for-website-top-hd-images-for-free-light-color-background-images-for-website-1-1024x768.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed;
+}
+
+  #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+  }
+
+    @media (max-width: 576px) {
+      .col-2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+
+    .small-boxes {
+      margin-top: 50px;
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      background: linear-gradient(to left, #2ddddd, #2ddddd);
+    }
+
+    .small-box {
+      height: 30px;
+      text-align: left;
+      line-height: 20px;
+      padding-top: 1px;
+      margin-top: 5px;
+      background-color: #fefefd;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .content-section {
+      margin-top: 20px;
+    }
+
+    .content-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+    .content-section-program {
+      margin-top: 20px;
+    }
+
+    .content-section-program img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+    
+    .content-box-program {
+      background-color: #c3e1e1;
+      padding: 15px;
+      border-radius: 40px;
+      border: 3px solid #dca6d1;
+      height: 100%;
+      }
+
+      .content-box-board {
+        background-color: #f95252;
+        padding: 15px;
+        border: 3px solid #000000;
+        height: 100%;
+        }
+
+    .content-box {
+      background-color: #c3e1e1;
+      padding: 15px;
+      border-radius: 40px;
+      border: 3px solid #dca6d1;
+      height: 100%;
+      }
+
+    .small-content-box {
+      
+      padding: 5px;
+      border-radius: 10px;
+      height: 100%;
+      }
+
+    /* Custom styles for About Us section */
+    .about-us-section {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-us-box {
+      text-align: center;
+      padding: 10px;
+      font-size: 21px;
+      background-color: #99ecaa;
+      position: relative;
+      margin-top: 20px;
+      
+    }
+    /* Custom styles for Content Box - eb1 */
+    .content-box-eb1 {
+      background-color: #c3e1e1;
+      padding: 15px;
+      border: 3px solid #dca6d1;
+      height: 100%;
+      border-radius: 40px;
+      margin-bottom: 20px; /* Add space between content boxes */
+    }
+
+  
+    .content-box-eb15 {
+      background-color: #c3e1e1;
+      padding: 15px;
+      border: 3px solid #dca6d1;
+      border-radius: 40px;
+      height: 100%;
+      margin-bottom: 40px;
+        /* No margin-bottom for the last content box */
+    }
+    .content-section-2 {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .content-section-2 img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+    .footer {
+      color: #0238fd;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .name {
+      color: #000000; /* Yellow color for the name */
+    }
+    .navbar a {
+      color: #080808;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .navbar a .extra-text {
+      opacity: 0;
+      transition: opacity 0.3s;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #2ddddd;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .navbar a:hover {
+      background-color: #2ddddd;
+      color: #fff;
+    }
+
+    .navbar a:hover .extra-text {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <video id="video-background" autoplay loop muted>
+    <source src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/clouds_-_64767%20(1080p).mp4?alt=media&token=5f4565e5-5d2c-404d-9ac2-9b7f1da82bec" type="video/mp4">
+    <!-- Add additional source elements for other video formats if needed -->
+    Your browser does not support the video tag.
+</video>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 text-center">
+        <img src="https://www.kmit.in/images/kmit-bar.png" alt="Top Left Image"
+          class="img-fluid rounded-circle" style="max-width: 150px; max-height: 75px;">
+      </div>
+      <div class="col-6 text-center mx-auto">
+        <h1 class="text-danger mt-3 display-5">NATIONAL SERVICE SCHEME</h1>
+        <h2 class="text-dark small mt-2">Central Sector Scheme of Government of India, Ministry of Youth Affairs &
+          Sports.</h2>
+      </div>
+      <div class="col-2 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/NSS-symbol.jpeg" class="img-fluid rounded-circle"
+          style="max-width: 150px; max-height: 80px;">
+      </div>
+    </div>
+
+    <!-- Navigation container row -->
+    <div class="row navbar">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-around"> <!-- Center the small boxes and add spacing -->
+          <!-- Home -->
+          <div class="col position-relative">
+            <a href="home.html">Home</a>
+          </div>
+          <!-- About Us -->
+          <div class="col position-relative">
+            <a href="about_us.html">About Us</a>
+          </div>
+          <!-- Gallery -->
+          <div class="col position-relative">
+            <a href="gallery.html">Gallery</a>
+          </div>
+          <!-- Events -->
+          <div class="col position-relative">
+            <a href="events.html">Events</a>
+          </div>
+          <!-- Blood Community -->
+          <div class="col position-relative">
+            <a href="blood_community.html" onclick="window.open(this.href, '_blank'); return false;">Blood Community</a>
+          </div>
+          <!-- Contact Us -->
+          <div class="col position-relative">
+            <a href="contact_us.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="row content-section">
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/NSS-symbol.jpeg" alt="About Us Image" class="img-fluid rounded-circle" style = "max-height:270px;">
+      </div>
+      <div class="col-md-8">
+        <div class="content-box">
+          <h3>About Us</h3>
+          <p>The National Service Scheme (NSS) is a central initiative by the Government of India, 
+            under the Ministry of Youth Affairs & Sports. It invites students from 11th & 12th grades, 
+            as well as those in technical institutions, colleges, and universities, to participate in government-led 
+            community service programs. Launched in 1969, NSS aims to shape the character and personality of students through voluntary community service.
+            Operating across 657 universities, 51 councils/directorates, and involving over 20,000 institutions, NSS follows the motto of 'Education through Service.' 
+            Since its inception, more than 7.4 crore students have benefited from NSS.<span style="font-family: 'Arial', sans-serif; font-style: italic; color: #4CAF50; text-decoration: underline;"></span></p>
+        </div>
+      </div>
+    </div>
+  <!-- Chronology Order of NSS -->
+<div class="row about-us-section">
+  <div class="col-md-12 text-center">
+    <div class="small-content-box mt-4">
+      <h3 class="text-dark"><u>CHRONOLOGY ORDER OF NSS</u></h3>
+    </div>
+  </div>
+</div>
+
+<!-- Chronology Order Boxes -->
+<div class="row about-us-section">
+  <!-- Program Officer Box -->
+  <div class="col-md-4">
+    <div class="about-us-box rounded text-center bg-info shadow">
+      <h5 class="m-0">Program Officer</h5>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="about-us-box rounded text-center bg-success shadow">
+      <h5 class="m-0">Executive Board</h5>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="arrow-line"></div> <!-- Line connecting arrows -->
+    <div class="arrow-down"></div> <!-- Arrow pointing down -->
+    <div class="about-us-box rounded text-center bg-warning shadow">
+      <h5 class="m-0">Coordinator</h5>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="arrow-line"></div> <!-- Line connecting arrows -->
+    <div class="arrow-down"></div> <!-- Arrow pointing down -->
+    <div class="about-us-box rounded text-center bg-primary shadow">
+      <h5 class="m-0">Volunteer Incharge</h5>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="arrow-line"></div> <!-- Line connecting arrows -->
+    <div class="arrow-down"></div> <!-- Arrow pointing down -->
+    <div class="about-us-box rounded text-center bg-danger shadow">
+      <h5 class="m-0">Volunteer</h5>
+    </div>
+  </div>
+</div>
+
+<style>
+  .arrow-line {
+    width: 2px;
+    height: 100%;
+    background-color: #ccc; /* Change line color if needed */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #21f6f3; /* Change the color if needed */
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; /* Ensure arrows are on top of the line */
+  }
+
+  .arrow-down:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #21f6f3; /* Change the color if needed */
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    z-index: 1; /* Ensure arrows are on top of the line */
+  }
+</style>
+<div class="row content-section-program justify-content-center align-items-center">
+  <div class="col-md-2 text-center">
+    <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/WhatsApp%20Image%202024-03-02%20at%2023%2C10%2C54_3aec2c98-photoaidcom-cropped%20(2).jpg?alt=media&token=079a7714-8e6a-45a0-bbc3-07c66bf72e15" alt="eb1 Image" class="img-fluid">
+  </div>
+  <div class="col-md-4">
+    <div class="content-box-program text-center">
+      <h3>Dr.Swapna</h3>
+      <h4>Program Officer</h4>
+      <p>This is the content for eb1. It should be equal to the left image size.</p>
+    </div>
+  </div>
+</div>
+<div class="row content-section-program justify-content-center align-items-center">
+  <div class="col-md-4">
+    <div class="content-box-board text-center">
+      <h3>Executive Board</h3>
+      </div>
+  </div>
+
+
+  <div class="row content-section">
+<!-- Section 2 -->
+<div class="col-md-2">
+  <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/cbf44e9d-ea2b-41d7-8024-dcb0662bd4e5-photoaidcom-cropped.jpg?alt=media&token=e47fd01a-5b20-4b83-82ea-7cd5b3479774" alt="eb2 Image" class="img-fluid">
+</div>
+  <div class="col-md-4">
+    <div class="content-box-eb1">
+      <h3>M Rishwanth Kumar</h3>
+      <h4>President NSS KMIT</h4>
+      <p>This is the content for eb2. It should be equal to the left image size.</p>
+    </div>
+  </div>
+  
+<!-- Section 3 -->
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/Sai%20Divya%2Ckmit-photoaidcom-cropped.jpg?alt=media&token=6eca159f-9447-4454-bd29-583f293695ee" alt="eb1 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>Divya</h3>
+        <h4>Vice-President</h4>
+        <p>This is the content for eb1. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Section 4 -->
+  <div class="row content-section">
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/WhatsApp%20Image%202024-03-08%20at%2022%2C43%2C16_f6506854-photoaidcom-cropped.jpg?alt=media&token=ef72ff97-a903-4260-9f41-807c6cb466cb" alt="eb2 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>Sai Kiran Chowdary</h3>
+        <h4>Associate-President</h4>
+        <p>This is the content for eb2. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  
+<!-- Section 5 -->
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/0f65a165-2220-4f94-89a0-49c4e04446d0_1686928229826.PNG?alt=media&token=bfb12ed6-0afa-4e19-a01d-fd867c51cf9a" alt="eb1 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>K Pooja Reddy</h3>
+        <h4>Documentation</h4>
+        <p>This is the content for eb1. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Section 6 -->
+  <div class="row content-section">
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/Mohd%20Muslehuddin%20-photoaidcom-cropped.jpg?alt=media&token=feaacb59-153f-41c1-8805-7d4195a5d6a7" alt="eb2 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>Musleh</h3>
+        <h4>Human Resource (HR)</h4>
+        <p>This is the content for eb2. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  
+<!-- Section 7 -->
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/1K8A2142_20240312_200534_0000-photoaidcom-cropped.jpg?alt=media&token=a07ee5d9-91de-438d-ae13-4437a62e6208" alt="eb1 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>Chaitanya</h3>
+        <h4>Treasurer</h4>
+        <p>This is the content for eb1. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Section 8 -->
+  <div class="row content-section">
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/1K8A2142_20240312_200534_0000-photoaidcom-cropped%20(2).jpg?alt=media&token=136440b3-c584-4b83-8e11-23d03d3da82b" alt="eb2 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>Devansh</h3>
+        <h4>Public Relation (PR)</h4>
+        <p>This is the content for eb2. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  
+<!-- Section 9 -->
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/WhatsApp%20Image%202024-03-09%20at%2010%2C44%2C47_9cb11310-photoaidcom-cropped.jpg?alt=media&token=0871b38c-bf40-4b71-880b-e8b9d6ea982d" alt="eb1 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>Vaishnavi</h3>
+        <h4>Photography</h4>
+        <p>This is the content for eb1. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Section 12 -->
+  <div class="row content-section">
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/IMG_20231014_123810-photoaidcom-cropped.jpg?alt=media&token=97eef885-c460-4bad-bc32-bd227cff74d9" alt="eb2 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>R Sahith</h3>
+        <h4>Coordinator Incharge</h4>
+        <p>This is the content for eb2. It should be equal to the left image size.</p>
+      </div>
+    </div>
+
+  
+<!-- Section 13 -->
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/WhatsApp%20Image%202023-11-17%20at%2020%2C34%2C58_8ff5d17c_20240312_200547_0000-photoaidcom-cropped.jpg?alt=media&token=47d9f9c7-9140-41d9-bd88-1742565a0f32" alt="eb1 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb1">
+        <h3>Moksha</h3>
+        <h4>Grivience Cell</h4>
+        <p>This is the content for eb1. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Section 14 -->
+  <div class="row content-section">
+    <div class="col-md-2">
+      <img src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/WhatsApp%20Image%202024-03-12%20at%2020%2C34%2C55_64b39337-photoaidcom-cropped.jpg?alt=media&token=6f3569bc-d148-4ded-a3b3-2d69c43a0c79" alt="eb2 Image" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+      <div class="content-box-eb15">
+        <h3>Anisha</h3>
+        <h4>Grivience Cell</h4>
+        <p>This is the content for eb2. It should be equal to the left image size.</p>
+      </div>
+    </div>
+  </div>    
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <footer class="footer">
+    &copy; 2024-2026 <span class="name">NSS KMIT</span> | All Rights Reserved. 
+    <br>Designed by <span class="name">M Rishwanth Kumar</span>
+  </footer>
+</body>
+
+</html>

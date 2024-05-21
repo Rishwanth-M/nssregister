@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official website of NSS KMIT - National Service Scheme, Keshav Memorial Institute of Technology. Stay updated on our events, community service, and social initiatives.">
+    <meta name="author" content="NSS KMIT">
+
+    <meta name="viewport" content="width=1024, initial-scale=-1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>BLOOD COMMUNITY</title>
+    <style>
+        body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url('https://www.knoxalliance.store/wp-content/uploads/2017/05/light-color-background-images-for-website-top-hd-images-for-free-light-color-background-images-for-website-1-1024x768.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed;
+}
+      
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .designed-by {
+            font-weight: bold;
+        }
+
+        .small-boxes {
+            margin-top: 50px;
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+            background: linear-gradient(to left, #2ddddd, #2ddddd);
+        }
+
+        .small-box {
+            height: 30px;
+            text-align: left;
+            line-height: 20px;
+            padding-top: 1px;
+            margin-top: 5px;
+            background-color: #fefefd;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .content-section {
+            margin-top: 20px;
+        }
+
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content-box {
+            background-color: #43a7a7;
+            padding: 15px;
+            border: 3px solid #dca6d1;
+        }
+
+        /* Add the following styles to your existing CSS */
+
+/* Center the donor information table */
+#donorInfoContainer {
+    text-align: center;
+}
+
+/* Style the donor information table */
+#donorTable {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#donorTable th, #donorTable td {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+#donorTable th {
+    background-color: #000000;
+    color: #000000;
+}
+
+/* Adjust the footer styling */
+.footer {
+    color: #0238fd;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+      
+          .name {
+            color: #000000; /* Yellow color for the name */
+          }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .signup-container {
+            background-color: #f8f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 60%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Styles for smaller screens (less than 768px) */
+        @media (max-width: 768px) {
+            .signup-container {
+                width: 100%; /* Adjusted width for better responsiveness */
+            }
+        }
+
+        /* Styles for even smaller screens (less than 576px) */
+        @media (max-width: 576px) {
+            .signup-container {
+                width: 100%; /* Further adjust width for smaller screens */
+            }
+        }
+
+        /* ... (other existing styles remain the same) */
+
+        /* Preserve existing styles */
+        .signup-container h2 {
+            text-align: center;
+            color: #db3434;
+        }
+
+        .signup-form {
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%; /* Adjusted width for better responsiveness */
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #3498db;
+        }
+
+        .form-group #packets,
+        .form-group #hospital,
+        .form-group #from-kmit,
+        .form-group #phone,
+        .form-group #phone-verification {
+            width: 100%; /* Adjusted width for better responsiveness */
+        }
+
+        .form-group .signup-btn {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%; /* Adjusted width for better responsiveness */
+            transition: background-color 0.3s;
+        }
+
+        .form-group .signup-btn:hover {
+            background-color: #2980b9;
+        }
+        .navbar a {
+            color: #080808;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+      
+          .navbar a .extra-text {
+            opacity: 0;
+            transition: opacity 0.3s;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #2ddddd;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            pointer-events: none;
+            z-index: 1;
+          }
+      
+          .navbar a:hover {
+            background-color: #2ddddd;
+            color: #fff;
+          }
+      
+          .navbar a:hover .extra-text {
+            opacity: 1;
+          }
+    </style>
+</head>
+
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="https://firebasestorage.googleapis.com/v0/b/nsskmitwebsite.appspot.com/o/clouds_-_64767%20(1080p).mp4?alt=media&token=5f4565e5-5d2c-404d-9ac2-9b7f1da82bec" type="video/mp4">
+        <!-- Add additional source elements for other video formats if needed -->
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2 text-center">
+                <img src="https://www.kmit.in/images/kmit-bar.png" alt="Top Left Image"
+          class="img-fluid rounded-circle" style="max-width: 150px; max-height: 75px;">
+      </div>
+      <div class="col-6 text-center mx-auto">
+        <h1 class="text-danger mt-3 display-5">NATIONAL SERVICE SCHEME</h1>
+        <h2 class="text-black small mt-2">Central Sector Scheme of Government of India, Ministry of Youth Affairs &
+          Sports.</h2>
+      </div>
+      <div class="col-2 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/NSS-symbol.jpeg" class="img-fluid rounded-circle"
+          style="max-width: 150px; max-height: 80px;">
+      </div>
+        </div>
+
+       <!-- Navigation container row -->
+    <div class="row navbar">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-around"> <!-- Center the small boxes and add spacing -->
+            <!-- Home -->
+            <div class="col position-relative">
+              <a href="home.html">Home</a>
+            </div>
+            <!-- About Us -->
+            <div class="col position-relative">
+              <a href="about_us.html">About Us</a>
+            </div>
+            <!-- Gallery -->
+            <div class="col position-relative">
+              <a href="gallery.html">Gallery</a>
+            </div>
+            <!-- Events -->
+            <div class="col position-relative">
+              <a href="events.html">Events</a>
+            </div>
+            <!-- Blood Community -->
+            <div class="col position-relative">
+              <a href="blood_community.html" onclick="window.open(this.href, '_blank'); return false;">Blood Community</a>
+            </div>
+            <!-- Contact Us -->
+            <div class="col position-relative">
+              <a href="contact_us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Navigation links -->
+        <div class="d-flex justify-content-center mt-3">
+            <a href="donor_form_page.html" class="btn btn-primary mr-3">Go to Donor Page</a>
+            <a href="patient_form_page.html" class="btn btn-primary">Go to Patient Page</a>
+        </div>
+        <!-- Signup container -->
+        <div class="signup-container col-12 mx-auto">
+            <h2>Recipient Form</h2>
+            <form id="recipient-form" class="signup-form" action="/.netlify/functions/submitDonorform" method="POST">
+                <div class="form-group">
+                    <label for="name">Name of the Patient (with Surname):</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="MALE">MALE</option>
+                        <option value="FEMALE">FEMALE</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="blood-group">Blood Group Needed:</label>
+                    <select id="blood-group" name="blood-group" required>
+                        <option value="" disabled selected>Select Blood Group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="packets">Packets of Blood Needed:</label>
+                    <input type="number" id="packets" name="packets" required>
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Hospital Name and Address:</label>
+                    <textarea id="hospital" name="hospital" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="from-kmit">Are You From Kmit College?</label>
+                    <select id="from-kmit" name="from-kmit" required>
+                        <option value="" disabled selected>Select Yes or No</option>
+                        <option value="yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" maxlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-verification">Re-Enter Phone Number:</label>
+                    <input type="text" id="phone-verification" name="phone-verification" maxlength="10" required>
+                    <!-- You may add your phone verification logic here -->
+                </div>
+                <!-- your form fields go here -->
+                <button type="submit" class="signup-btn col-7 mx-5">Submit</button>
+            </form>
+        </div>
+        <div id="donorInfoContainer" class="mt-4">
+            <!-- Donor information will be displayed here -->
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function submitForm() {
+                // Get form data
+                const name = document.getElementById('name').value;
+                const gender = document.getElementById('gender').value;
+                const bloodGroup = document.getElementById('blood-group').value;
+                const packets = document.getElementById('packets').value;
+                const hospital = document.getElementById('hospital').value;
+                const fromKmit = document.getElementById('from-kmit').value;
+                const phone = document.getElementById('phone').value;
+                const phoneVerification = document.getElementById('phone-verification').value;
+    
+                // Validate phone number and phone verification
+                if (phone !== phoneVerification) {
+                    alert('Phone number and phone verification do not match. Please check and try again.');
+                    return;
+                }
+    
+                const formData = {
+                    name: name,
+                    gender: gender,
+                    bloodGroup: bloodGroup,
+                    packets: packets,
+                    hospital: hospital,
+                    fromKmit: fromKmit,
+                    phone: phone,
+                    phoneVerification: phoneVerification,
+                };
+    
+                // Display loading/spinner if needed
+    
+                // Trigger Netlify Function for form submission
+                fetch('/.netlify/functions/submitDonorform', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    alert(data.message);
+    
+                    // Display donor information if available
+if (data.donorData && data.donorData.length > 0) {
+    // Display donor information in the specified container
+    const donorInfoContainer = document.getElementById('donorInfoContainer');
+
+    // Create a table element
+    const table = document.createElement('table');
+    table.id = 'donorTable'; // Set an ID for styling
+    table.border = '1';
+
+    // Create a header row
+    const headerRow = table.insertRow(0);
+    const nameHeader = headerRow.insertCell(0);
+    const bloodGroupHeader = headerRow.insertCell(1);
+    const phoneHeader = headerRow.insertCell(2);
+    nameHeader.innerHTML = '<b>Name</b>';
+    bloodGroupHeader.innerHTML = '<b>Blood Group</b>';
+    phoneHeader.innerHTML = '<b>Phone</b>';
+
+    // Iterate through donor data and create rows
+    data.donorData.forEach((donor, index) => {
+        const row = table.insertRow(index + 1);
+        const nameCell = row.insertCell(0);
+        const bloodGroupCell = row.insertCell(1);
+        const phoneCell = row.insertCell(2);
+
+        // Set cell values
+        nameCell.innerHTML = donor.name;
+        bloodGroupCell.innerHTML = donor.bloodGroup;
+        phoneCell.innerHTML = donor.phone;
+    });
+
+    // Clear existing content and append the table
+    donorInfoContainer.innerHTML = '';
+    donorInfoContainer.appendChild(table);
+} else {
+    // Clear the donorInfoContainer if no donor data is available
+    document.getElementById('donorInfoContainer').innerHTML = '';
+}
+
+
+    
+                    // Additional handling if needed
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Internal Server Error');
+                });
+            }
+    
+            document.getElementById('recipient-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                submitForm();
+            });
+        });
+    </script>
+    
+    <footer class="footer">
+        &copy; 2024-2026 <span class="name">NSS KMIT</span> | All Rights Reserved. 
+        <br>Designed by <span class="name">M Rishwanth Kumar</span>
+      </footer>
+</body>
+
+</html>
